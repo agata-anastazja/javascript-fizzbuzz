@@ -3,25 +3,17 @@ var Fizzbuzz = function() {
 };
 
 Fizzbuzz.prototype.isDivisibleByThree = function(number) {
-  if(number % 3 == 0){
-    return true ; }
-  else {
-    return false ;
-    };
+  return this._isDivisibleBy(number, 3);
   };
 
 Fizzbuzz.prototype.isDivisibleByFive = function(number) {
-  if(number % 5 == 0){
-    return true; }
-  else {
-    return false;
-  };
+  return this._isDivisibleBy(number, 5);
 };
 
 Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
-  if(number % 15 == 0){
-      return true; }
-  else {
-    return false;
-  };
+  return this._isDivisibleBy(number, 15);
+};
+
+Fizzbuzz.prototype._isDivisibleBy = function(number, divisor) {
+  return (number % divisor === 0);
 };
