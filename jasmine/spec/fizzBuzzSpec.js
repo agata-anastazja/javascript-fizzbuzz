@@ -43,5 +43,42 @@ describe('Fizzbuzz', function() {
     });
   });
 
+  describe('fizzbuzz returns', function() {
+
+    it('fizz when a number is divisible by 3', function() {
+        expect(fizzbuzz.says(3)).toEqual("fizz");
+    });
+  });
+
+
+  describe('fizzbuzz returns', function() {
+
+    it('buzz when a number is divisible by 5', function() {
+        expect(fizzbuzz.says(5)).toEqual("buzz");
+    });
+  });
+
+
+  describe('fizzbuzz returns', function() {
+
+    it('fizzbuzz when a number is divisible by 15', function() {
+        expect(fizzbuzz.says(15)).toEqual("fizzbuzz");
+    });
+  });
+
+  describe('fizzbuzz returns', function() {
+
+    it('0 when passed 0', function() {
+        expect(fizzbuzz.says(0)).toEqual(0);
+    });
+  });
+
+  describe('fizzbuzz returns', function() {
+
+    it('4 when passed 4', function() {
+        expect(fizzbuzz.says(4)).toEqual(4);
+    });
+  });
+
 
 });

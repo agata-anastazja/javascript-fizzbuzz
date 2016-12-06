@@ -17,3 +17,12 @@ Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
 Fizzbuzz.prototype._isDivisibleBy = function(number, divisor) {
   return (number % divisor === 0);
 };
+
+Fizzbuzz.prototype.says = function(number) {
+  if(number===0){return 0;}
+  if(this.isDivisibleByFifteen(number)) { return "fizzbuzz" ;}
+  if(this.isDivisibleByThree(number)) { return "fizz" ;}
+  if(this.isDivisibleByFive(number)) { return "buzz" ;}
+  {return number;}
+
+};
