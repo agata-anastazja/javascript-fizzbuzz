@@ -9,4 +9,12 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.isDivisibleByThree(3)).toBe(true);
     });
   });
+
+
+  describe('knows when is NOT', function() {
+    it('divisible by 3', function() {
+      fizzbuzz = new Fizzbuzz();
+      expect(fizzbuzz.isDivisibleByThree(1)).toBe(false);
+    });
+  });
 });
