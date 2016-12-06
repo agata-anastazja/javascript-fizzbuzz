@@ -17,3 +17,11 @@ Fizzbuzz.prototype.isDivisibleByFive = function(number) {
     return false;
   };
 };
+
+Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
+  if(number % 15 == 0){
+      return true; }
+  else {
+    return false;
+  };
+};

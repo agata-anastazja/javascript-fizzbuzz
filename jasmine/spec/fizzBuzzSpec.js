@@ -30,4 +30,18 @@ describe('Fizzbuzz', function() {
     });
   });
 
+
+  describe('knows when number is', function(){
+    it('divisible by 15', function() {
+      expect(fizzbuzz.isDivisibleByFifteen(15)).toBe(true);
+    });
+  });
+
+  describe('knows when number is NOT', function(){
+    it('divisible by 15', function() {
+      expect(fizzbuzz.isDivisibleByFifteen(1)).toBe(false);
+    });
+  });
+
+
 });
